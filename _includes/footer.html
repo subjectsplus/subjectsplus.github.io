@@ -1,0 +1,23 @@
+<footer class="mt-auto">
+    <div class="container">
+        <div class="d-sm-flex flex-sm-row flex-sm-nowrap justify-content-sm-between mt-sm-4 mb-sm-4">
+            <div class="iatul-logo-footer">
+                <a href="https://www.iatul.org/" target="_blank"><img src="{{ 'assets/images/iatul-logo.png' | absolute_url }}" alt="IATUL logo" class="iatul-logo" /></a>
+            </div>
+            <ul class="list-unstyled d-sm-flex flex-sm-row flex-sm-nowrap justify-content-sm-evenly justify-content-lg-end logos-area">
+                <li>
+                    <a href="https://www.miami.edu/" target="_blank"><img src="{{ 'assets/images/Horizontal-UM-Signature.png' | absolute_url }}" alt="University of Miami logo" class="um-logo" /></a>
+                </li>
+                <li>
+                    <a href="https://library.fiu.edu/" target="_blank"><img src="{{ 'assets/images/FIU_hrz_Color.png' | absolute_url }}" alt="Florida International University logo" class="fiu-logo" /></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            &copy; {{ 'now' | date: "%Y" }}
+            {% for item in site.data.footer %}
+                | <a href="{% if item.local_path == true %}{{ item.link | absolute_url }}{% else %}{{ item.link }}{% endif %}">{{ item.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</footer>

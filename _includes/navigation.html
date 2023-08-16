@@ -1,0 +1,18 @@
+<ul class="navbar-nav">
+    {% for item in site.data.navigation %}
+    {% if item.dropdown == true %}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="{{ item.dropdown_id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ item.name }}</a>
+        <ul class="dropdown-menu" aria-labelledby="{{ item.dropdown_id }}">
+            {% for entry in item.subfolderitems %}
+            <li><a class="dropdown-item" href="{% if entry.local_path == true %}{{ entry.url | absolute_url }}{% else %}{{ entry.url }}{% endif %}">{{ entry.sub_nav_item }}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% else %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% if item.local_path == true %}{{ item.link | absolute_url }}{% else %}{{ item.link }}{% endif %}">{{ item.name }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

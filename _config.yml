@@ -1,0 +1,60 @@
+# Site settings
+title: SubjectsPlus - Take Control of your Library Data
+#email:
+meta_description: >- # this means to ignore newlines until "baseurl:"
+SubjectsPlus - Take Control of your Library Data
+meta_keywords: SubjectsPlus, subject guide, research guide, course guide, library software, database list, staff list
+#baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://subjectsplus.github.io/"
+image_path: "https://subjectsplus.github.io/"
+
+author: University of Miami Libraries
+street_address: 1300 Memorial Drive
+city: Coral Gables
+state: FL
+zip_code: 33124-0320
+country: United States of America
+phone: (305) 284-3233
+
+# Google services
+#google_analytics:
+
+# Build settings
+charset: UTF-8
+markdown: kramdown
+future: true
+permalink: none
+
+# Version number
+build: 20230815
+
+# SASS settings, including Bootstrap SCSS files
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+#   - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+  - README.md
+  - nul
+  - subjectsplus.github.io.iml

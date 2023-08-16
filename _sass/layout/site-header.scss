@@ -1,0 +1,159 @@
+.top-header {
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.iatul-nav {
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    padding-top: $padding-sm;
+    padding-bottom: $padding-sm;
+  }
+
+  .navbar-brand {
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    color: $iatul-blue;
+    line-height: 1.4;
+    margin-right: 0.75rem;
+    width: calc(100% - 50px);
+
+    @media (min-width: 480px) {
+    line-height: 1;
+    width: auto;
+
+      br {
+        display: none;
+      }
+    }
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: 1.25rem;
+      margin-right: 1rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      line-height: 1.2;
+      width: 250px;
+      br {
+        display: inline-block;
+      }
+    }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      margin-right: 2rem;
+      line-height: 1;
+      width: auto;
+
+      br {
+        display: none;
+      }
+    }
+    @media (min-width: map-get($grid-breakpoints, xl)) {
+      margin-right: 12rem;
+    }
+
+    .miami-brand {
+      color: white;
+      background-color: $iatul-light-blue;
+      padding: 0.1rem 0.25rem;
+      text-shadow: 2px 1px 4px rgba(0,0,0,.15);
+
+      @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 0.1rem 0.5rem;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    color: $iatul-blue;
+    border-color: rgba($iatul-blue,.5);
+    padding: .25rem .5rem;
+    font-size: 1rem;
+
+    @media (min-width: 480px) {
+      padding: .25rem .75rem;
+    }
+
+    &:focus{
+      box-shadow: 0 0 0 .125rem rgba(0,0,0,.125);
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(13, 44, 82, .75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      width: 1em;
+      height: 1em;
+
+      @media (min-width: 480px) {
+        width: 1.25em;
+        height: 1.25em;
+      }
+      @media (min-width: map-get($grid-breakpoints, sm)) {
+        width: 1.5em;
+        height: 1.5em;
+      }
+    }
+  }
+
+  #mainNav {
+    margin: .5rem -15px -.5rem -15px;
+    padding: 15px;
+    background-color: $iatul-blue;
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      height: 40px;
+    }
+  }
+
+  .navbar-nav {
+    width: 100%;
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    .nav-link {
+      padding:0 0 .5rem 0;
+      color: #FFF;
+      text-decoration: none;
+      font-size: 1rem;
+
+      &:hover,
+      &:focus,
+      &:active {
+        @include transition-all();
+        color: $iatul-light-yellow;
+      }
+
+      @media (min-width: map-get($grid-breakpoints, md)) {
+        padding:0;
+        color: #000;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.current{
+          @include transition-all();
+          color: $iatul-blue;
+        }
+      }
+      @media (min-width: map-get($grid-breakpoints, lg)) {
+        font-size: 1.125rem;
+      }
+    }
+
+    .dropdown-toggle {
+      &:after{
+        color: $iatul-light-blue;
+      }
+    }
+    .dropdown-item {
+      &:hover, &:focus{
+        @include transition-all();
+        background-color: $iatul-light-blue;
+        color: $white;
+        text-shadow: 2px 1px 4px rgba(0,0,0,.15);
+      }
+    }
+  }
+}
