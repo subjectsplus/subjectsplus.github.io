@@ -2,13 +2,13 @@
 title: SubjectsPlus - Take Control of your Library Data
 #email:
 meta_description: >- # this means to ignore newlines until "baseurl:"
-  SubjectsPlus - Take Control of your Library Data
+  SubjectsPlus is is a free and open source tool to help you manage several interrelated parts of your library website.
 meta_keywords: SubjectsPlus, subject guide, research guide, course guide, library software, database list, staff list
 baseurl: "/subjectsplus.github.io" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000"
 image_path: "http://localhost:4000/subjectsplus.github.io"
 
-author: University of Miami Libraries
+author: SubjectsPlus Team
 street_address: 1300 Memorial Drive
 city: Coral Gables
 state: FL
