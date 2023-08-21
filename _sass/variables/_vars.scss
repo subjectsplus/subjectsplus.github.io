@@ -1,6 +1,6 @@
 // Overwrite the basic Bootstrap variables and add your own variables
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
 //Custom Sizes, Margins, Paddings
 $padding-xl:                    2rem; // 32px
@@ -10,6 +10,9 @@ $padding-sm:					1.25rem; //20px
 $z-index-base:					10000;
 
 //Custom Colors
+$sp-primary-color: #c054a0;
+$sp-secondary-color: #b0248f;
+
 $iatul-blue:                    #0d2c52;
 $iatul-light-blue:              #6bccd5;
 $iatul-light-yellow:            #fff8d3;
@@ -29,8 +32,8 @@ $duration: (
 // -------------------------
 
 // Theme Colors
-$primary:       				$iatul-blue;
-$secondary:                     $feature;
+$primary:       				$sp-primary-color;
+$secondary:                     $sp-secondary-color;
 
 // Body
 $body-bg:                       #FFFFFF;
@@ -49,50 +52,45 @@ $grid-breakpoints: (
         sm: 576px,
         md: 768px,
         lg: 992px,
-        lg2: 1024px,
         xl: 1200px
 
 );
 
 // Define the maximum width of `.container` for different screen sizes.
 $container-max-widths: (
-        sm: 580px,
-        md: 748px,
-        lg: 1000px,
-        xl: 1200px
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px
 );
 
 $spacer: 1rem;
 
 // Fonts
-$font-family-base:              'Nunito', sans-serif;
-$font-family-sans-serif: 		'Nunito', sans-serif;
+$font-family-base:              'Inter', sans-serif;
+$font-family-sans-serif: 		'Inter', sans-serif;
 
 $font-size-base:              	1rem; // Assumes the browser default, set to 16px
-$font-size-lg:                	($font-size-base * 3);	//48px
 $font-size-sm:                	($font-size-base * .875); //14px
 $font-size-mini:				($font-size-base * .75); //12px
 
-$font-weight-light:         	300;
-$font-weight-normal:        	400;
-$font-weight-medium:          	500;
-$font-weight-semi:				600;
+$font-weight-semi:				500;
 
-$h1-font-size:                	$font-size-base * 2.125; // 32px
+$h1-font-size:                	$font-size-base * 2; // 32px
 $h2-font-size:                	$font-size-base * 1.75; // 28px
 $h3-font-size:                	$font-size-base * 1.5;	// 24px
 $h4-font-size:                	$font-size-base * 1.25; // 20px
 $h5-font-size:                	$font-size-base * 1.125; // 18px
 $h6-font-size:                	$font-size-base;
 
+$line-height-lg:              	1.4;
+$line-height-sm:              	1.2;
+
 $headings-margin-bottom:      	$spacer;
-$headings-font-weight:        	300;
 $headings-line-height:        	1.2;
 $headings-color:                $iatul-blue;
 
-// Components
-$line-height-lg:              	1.4;
-$line-height-sm:              	1.2;
+// Borders
 
 $border-width:                	1px;
 $border-color:                	$feature;

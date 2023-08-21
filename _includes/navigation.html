@@ -5,13 +5,25 @@
         <a class="nav-link dropdown-toggle" href="#" id="{{ item.dropdown_id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ item.name }}</a>
         <ul class="dropdown-menu" aria-labelledby="{{ item.dropdown_id }}">
             {% for entry in item.subfolderitems %}
-            <li><a class="dropdown-item" href="{% if entry.local_path == true %}{{ entry.url | absolute_url }}{% else %}{{ entry.url }}{% endif %}">{{ entry.sub_nav_item }}</a></li>
+            <li><a class="dropdown-item" href="{% if entry.local_path == 'true' %}{{ entry.url | absolute_url }}{% else %}{{ entry.url }}{% endif %}">{{ entry.sub_nav_item }}</a></li>
             {% endfor %}
         </ul>
     </li>
     {% else %}
     <li class="nav-item">
-        <a class="nav-link" href="{% if item.local_path == true %}{{ item.link | absolute_url }}{% else %}{{ item.link }}{% endif %}">{{ item.name }}</a>
+        {% if item.class == 'button' %}
+        {% assign link_class = 'nav-link btn btn-primary' %}
+        {% else %}
+        {% assign link_class = 'nav-link' %}
+        {% endif %}
+
+        {% if item.local_path == 'true' %}
+        <a class="{{ link_class }}" href="{{ item.link | absolute_url }}">{{ item.name }}</a>
+        {% elsif item.local_path == 'anchor' %}
+        <a class="{{ link_class }}" href="#{{ item.link }}">{{ item.name }}</a>
+        {% else %}
+        <a class="{{ link_class }}" href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+        {% endif %}
     </li>
     {% endif %}
     {% endfor %}

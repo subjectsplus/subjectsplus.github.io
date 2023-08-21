@@ -8,7 +8,7 @@ $imagepath: '{{ site.image_path }}';
 // Bootstrap 5.1 All
 //@import 'bootstrap5/bootstrap';
 
-// Bootstrap 5.1 Parts
+// Bootstrap 5.1.3 Parts
 @import 'bootstrap5/functions';
 @import 'bootstrap5/variables';
 @import 'bootstrap5/mixins';
@@ -19,7 +19,7 @@ $imagepath: '{{ site.image_path }}';
 @import "bootstrap5/images";
 @import "bootstrap5/containers";
 @import "bootstrap5/grid";
-@import "bootstrap5/tables";
+//@import "bootstrap5/tables";
 //@import "bootstrap5/forms";
 @import "bootstrap5/buttons";
 @import "bootstrap5/transitions";

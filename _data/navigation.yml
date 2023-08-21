@@ -1,58 +1,24 @@
+- name: Features
+  link: features
+  local_path: anchor
+  class:
+  dropdown:
+  dropdown_id:
 - name: About
-  link:
-  local_path:
-  dropdown: true
-  dropdown_id: aboutDropdown
-  subfolderitems:
-    - sub_nav_item: About the Conference
-      url: /about.html
-      local_path: true
-    - sub_nav_item: Campus Map
-      url: /assets/documents/IATUL-2022-UnivMiami-Campus-Map.pdf
-      local_path: true
-    - sub_nav_item: Accommodations
-      url: /accommodations.html
-      local_path: true
-    - sub_nav_item: Travel
-      url: /travel.html
-      local_path: true
-    - sub_nav_item: Travel Preparation
-      url: /travel-prep.html
-      local_path: true
-    - sub_nav_item: Tourist Information
-      url: /tourist-info.html
-      local_path: true
-    - sub_nav_item: Social Events and Study Tours
-      url: /social-events-study-tours.html
-      local_path: true
-    - sub_nav_item: Contacts & Organizers
-      url: /contacts-organizers.html
-      local_path: true
-    - sub_nav_item: Acknowledgements
-      url: /acknowledgements.html
-      local_path: true
-- name: Program
-  link: /program.html
-  local_path: true
+  link: about
+  local_path: anchor
+  class:
   dropdown:
   dropdown_id:
-- name: Speakers
-  link: /speakers.html
-  local_path: true
+- name: Help
+  link: help
+  local_path: anchor
+  class:
   dropdown:
   dropdown_id:
-- name: Sponsors
-  link: /sponsors.html
-  local_path: true
-  dropdown:
-  dropdown_id:
-- name: Registration
-  link: /registration.html
-  local_path: true
-  dropdown:
-  dropdown_id:
-- name: Recordings
-  link: https://www.iatul.org/about/news/iatul-2022-proceedings-and-recordings-now-available
+- name: Download
+  link: https://github.com/subjectsplus/SubjectsPlus/releases
   local_path: false
+  class: button
   dropdown:
   dropdown_id:
