@@ -86,7 +86,7 @@
 
     .nav-link {
       padding:0 0 .5rem 0;
-      color: #333333;
+      color: $text-default;
       text-decoration: none;
       font-size: 1rem;
       display: inline-block;
@@ -95,7 +95,7 @@
       &:focus,
       &:active {
         @include transition-all();
-        color: $iatul-light-yellow;
+        color: #000000;
       }
 
       &.btn-primary {
@@ -104,14 +104,7 @@
 
       @media (min-width: map-get($grid-breakpoints, md)) {
         padding: 0 2rem 0 0;
-
-        &:hover,
-        &:focus,
-        &:active,
-        &.current{
-          @include transition-all();
-          color: $iatul-blue;
-        }
+        display: block;
 
         &.btn-primary {
           margin-top: -0.425rem;
@@ -121,14 +114,14 @@
 
     .dropdown-toggle {
       &:after{
-        color: $iatul-light-blue;
+        color: $sp-primary-color;
       }
     }
     .dropdown-item {
       &:hover, &:focus{
         @include transition-all();
-        background-color: $iatul-light-blue;
-        color: $white;
+        background-color: #fafafa;
+        color: $text-default;
         text-shadow: 2px 1px 4px rgba(0,0,0,.15);
       }
     }

@@ -10,14 +10,15 @@ $padding-sm:					1.25rem; //20px
 $z-index-base:					10000;
 
 //Custom Colors
-$sp-primary-color: #c054a0;
-$sp-secondary-color: #b0248f;
+$sp-primary-color:              #c054a0;
+$sp-secondary-color:            #b0248f;
+$text-default:					#444444;
 
 $iatul-blue:                    #0d2c52;
 $iatul-light-blue:              #6bccd5;
 $iatul-light-yellow:            #fff8d3;
 $iatul-yellow:                  #fecb3f;
-$text-default:					#444444;
+
 $feature:                       $iatul-light-yellow;
 $iatul-orange:                  #f05f2f;
 $iatul-green:                   #488036;
@@ -88,7 +89,7 @@ $line-height-sm:              	1.2;
 
 $headings-margin-bottom:      	$spacer;
 $headings-line-height:        	1.2;
-$headings-color:                $iatul-blue;
+$headings-color:                $sp-secondary-color;
 
 // Borders
 
