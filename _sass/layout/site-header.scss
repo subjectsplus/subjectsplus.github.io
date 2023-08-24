@@ -95,7 +95,7 @@
       &:focus,
       &:active {
         @include transition-all();
-        color: #000000;
+        color: $sp-secondary-color;
       }
 
       &.btn-primary {

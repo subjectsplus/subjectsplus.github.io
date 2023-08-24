@@ -41,9 +41,9 @@ $body-bg:                       #FFFFFF;
 $body-color: 					$text-default;
 
 // Links
-$link-color: 					darken($iatul-light-blue, 20%);
+$link-color: 					$sp-secondary-color;
 $link-decoration:           	underline;
-$link-hover-color:          	lighten($link-color, 15%);
+$link-hover-color:          	$sp-primary-color;
 $link-hover-decoration:     	underline;
 $link-bkg-color:                transparent;
 
