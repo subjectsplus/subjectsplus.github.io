@@ -26,7 +26,7 @@ future: true
 permalink: none
 
 # Version number
-build: 20230815
+build: 20230828
 
 # SASS settings, including Bootstrap SCSS files
 sass:
