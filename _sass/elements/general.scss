@@ -54,6 +54,10 @@ a {
   font-weight: $font-weight-semi;
 }
 
+.fs-sm {
+  font-size: $font-size-sm;
+}
+
 .feature {
   background-color: $feature;
 }
@@ -72,11 +76,6 @@ a {
   padding: 0.5rem .75rem;
   border-radius: 50rem;
   box-shadow: 0 0 0 .25rem rgba($sp-primary-color, 20%);
-
-  &:hover,
-  &:focus {
-    background-color: darken($iatul-yellow, 8%) !important;
-  }
 }
 
 ul,
@@ -86,12 +85,4 @@ ol {
       margin-bottom: 1rem;
     }
   }
-}
-
-.img-gradient-border{
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(45deg,$iatul-orange, $iatul-yellow);
-  border-image-slice: 10;
-  padding: .25rem;
 }

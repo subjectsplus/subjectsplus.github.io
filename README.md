@@ -22,7 +22,7 @@ https://subjectsplus.github.io/
 * Localhost preview URL:  http://localhost:4000/subjectsplus.github.io/index.html
 
 * **Production Build:**
-  `bundle exec jekyll build`
+  `bundle exec jekyll build --config=_config.yml`
 
 ### For Github Pages
 
