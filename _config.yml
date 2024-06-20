@@ -6,7 +6,7 @@ meta_description: >- # this means to ignore newlines until "baseurl:"
 meta_keywords: SubjectsPlus, subject guide, research guide, course guide, library software, database list, staff list
 domain: "https://subjectsplus.github.io/"
 #baseurl: "https://subjectsplus.github.io/" # the subpath of your site, e.g. /blog
-url: "https://subjectsplus.github.io/"
+url: "https://subjectsplus.github.io"
 image_path: "https://subjectsplus.github.io/"
 
 author: SubjectsPlus Team
