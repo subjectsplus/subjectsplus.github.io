@@ -13,6 +13,8 @@
     <li class="nav-item">
         {% if item.class == 'button' %}
         {% assign link_class = 'nav-link btn btn-primary' %}
+        {% elsif item.class == 'accent' %}
+        {% assign link_class = 'nav-link accent' %}
         {% else %}
         {% assign link_class = 'nav-link' %}
         {% endif %}
@@ -20,8 +22,12 @@
         {% if item.local_path == 'true' %}
         <a class="{{ link_class }}" href="{{ item.link | absolute_url }}">{{ item.name }}</a>
         {% elsif item.local_path == 'anchor' %}
-        <a class="{{ link_class }}" href="#{{ item.link }}">{{ item.name }}</a>
-        {% else %}
+            {% if page.page_category == 'primary' %}
+                <a class="{{ link_class }}" href="#{{ item.link }}">{{ item.name }}</a>
+            {% elsif page.page_category == 'secondary'  %}
+                <a class="{{ link_class }}" href="{{ 'index.html' | absolute_url }}#{{ item.link }}">{{ item.name }}</a>
+            {% endif %}
+        {% else' %}
         <a class="{{ link_class }}" href="{{ item.link }}" target="_blank">{{ item.name }}</a>
         {% endif %}
     </li>

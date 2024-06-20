@@ -1,3 +1,9 @@
+- name: New Release
+  link: sp5-new-release.html
+  local_path: "true"
+  class: accent
+  dropdown:
+  dropdown_id:
 - name: Features
   link: features
   local_path: anchor
@@ -18,7 +24,7 @@
   dropdown_id:
 - name: Download
   link: https://github.com/subjectsplus/SubjectsPlus/releases
-  local_path: false
+  local_path: "false"
   class: button
   dropdown:
   dropdown_id:

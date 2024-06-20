@@ -102,6 +102,19 @@
         color: #FFFFFF;
       }
 
+      &.accent {
+        position: relative;
+        &:before{
+          content: "SP5";
+          position: absolute;
+          top: -.875rem;
+          left: 0;
+          font-weight: $font-weight-bold;
+          font-size: .875rem;
+          color: $sp-secondary-color;
+        }
+      }
+
       @media (min-width: map-get($grid-breakpoints, md)) {
         padding: 0 2rem 0 0;
         display: block;
